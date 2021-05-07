@@ -10,4 +10,4 @@
 </ul>
 
 <h2>Demo Images</h2>
-<img src="https://drive.google.com/uc?export=view&id=1nX_fxQ33vChSEI761miEm6c8pSX4cYwC"/>
+<img height="40%" width="50%" src="https://drive.google.com/uc?export=view&id=1nX_fxQ33vChSEI761miEm6c8pSX4cYwC"/>

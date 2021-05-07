@@ -1,6 +1,6 @@
 # CricketerStats_Flask
 
-<p>A simple web app made using flask that allows users to view and add stats of cricketers</p>
+<p>A simple web app made using flask that allows users to view and add stats of cricketers.</p>
 
 <h2>Tools Used<h2>
 <ul>

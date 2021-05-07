@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles.css') }}">
+
+    <title>Add Player</title>
+
+</head>
+<body>
+
+    <div class="d-flex justify-content-center">
+        <div class="container-bg1">
+            <h1 style="text-align: center;">ADD NEW PLAYER TO THE DATABASE</h1><br><br>
+        </div>
+    </div>
+    
+    <div class="d-flex justify-content-center">
+        <div class="container-bg1">
+    <form action="{{ url_for('addplayer')}}" method="POST" >
+
+        <div class="form-group row">
+            <label for="pname" class="col-sm-3 col-form-label">Player Name :</label>
+            <div class="col-md-8">
+              <input type="text" class="form-control" id="pname" name="pname">
+            </div>
+        </div>
+
+        <div class="form-group row">
+            <label for="matches" class="col-sm-3 col-form-label">Matches :</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="matches" name="matches">
+            </div>
+          </div>
+
+        <div class="form-group row">
+            <label for="runs" class="col-sm-3 col-form-label">Runs : </label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="runs" name="runs">
+            </div>
+          </div>
+
+        <div class="form-group row">
+            <label for="average" class="col-sm-3 col-form-label">Batting Average :</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="average" name="average">
+            </div>
+          </div>
+
+        <div class="form-group row">
+            <label for="strike" class="col-sm-3 col-form-label">Batting Strike Rate :</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="strike" name="strike">
+            </div>
+          </div>
+
+        <div class="form-group row">
+            <label for="wickets" class="col-sm-3 col-form-label">Wickets :</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="wickets" name="wickets">
+            </div>
+          </div>
+
+        <div class="form-group row">
+            <label for="link" class="col-sm-3 col-form-label">Image Link :</label>
+            <div class="col-sm-8">
+              <input type="text" class="form-control" id="link" name="link">
+            </div>
+          </div>
+
+        <div class="d-flex justify-content-center">
+        <input type="submit" value="Submit" class="btn btn-primary mb-2">
+        </div>
+    </form>
+
+    </div></div>
+</body>
+</html>

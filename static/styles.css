@@ -1,0 +1,30 @@
+body{
+    background-image: url("back.png" );
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.container-bg {
+    background: #f5f4ec;
+    margin: 4px 0px 4px 0px;
+    width: 850px;
+    border-radius: 1%;
+}
+
+.buttons{
+    padding-bottom: 20px;
+}
+
+select{
+    height: 40px;
+   width: 400px; 
+   text-align-last:center; 
+}
+
+.container-bg1{
+    background: #f5f4ec;
+    margin: 4px 0px 12px 0px;
+    padding: 5px 2px 8px 4px;
+    width: 850px;
+    border-radius: 1%;
+    font-weight: bold;
+}

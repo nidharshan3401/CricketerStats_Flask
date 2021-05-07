@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+ <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static', filename='styles.css') }}">
+
+   <title>Home</title>
+   <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+ </head>
+ <body>
+  <div class="d-flex justify-content-center">
+  <div class="container-bg">
+  <h1 style="text-align: center;">Cricket Players Stats</h1><br>
+  <div class="d-flex justify-content-center">
+    <form method="post"  target="_self" action="{{ url_for('details') }}">
+      <select class="form-select form-select-lg mb-3" name="playername" >
+        {% for player in players %}
+        <option  id="{{ player.id }}" value="{{ player.pname }}">{{ player.pname }}</option>
+        {% endfor %}
+      </select>
+      <br>
+      <br>
+      <div class="d-flex justify-content-center" style="padding-bottom: 20px;">
+      <input type="submit" name="action" value="GO" class="btn btn-success" style="margin-right: 3px;">
+      <button class="btn btn-primary" id="addp_but" type="button" onclick="window.location.href='{{ url_for('addplayer')}}';">ADD NEW PLAYER</button>
+      </div>
+  </form>
+
+  </div>
+  
+  </div>
+  </div>
+</span>
+  
+</body>
+</html>
